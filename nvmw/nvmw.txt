@@ -1,0 +1,11 @@
+1.安装：https://github.com/hakobera/nvmw
+node版本管理工具
+需要修改path目录。
+常见nvmw问题：1.https://www.cnblogs.com/milo-wjh/p/6255319.html
+                         2.需要删除原有node和npm
+                         3.下载：nvmw install （node的版本号）
+                         4.使用：nvmw use (node的版本号)
+
+2.检测浏览器对es6的支持
+  npm install es-checker -g
+  使用es-checker
