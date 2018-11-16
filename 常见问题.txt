@@ -1,0 +1,4 @@
+1.npm init 可以自动生成 package.json
+
+2.--save-dev安装的插件被写入devDependencies对象里。用于开发环境，不用于生产环境。
+  --save安装的插件被写入dependencies对象里，需要发布到生产环境
