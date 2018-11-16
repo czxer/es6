@@ -1,0 +1,30 @@
+官网：https://babel.docschina.org/
+babel将es6写的文件转化成es5的文件便于读取。
+要点:
+1.使用babel，需要在项目根目录下配置文件.babelrc用来配置转码规则presents和插件plugins
+       {
+          "presents":[ ]，
+          "plugins":[ ] 
+       }
+
+## npm install -g babel-preset-es2015  全局安装es2015转码规则，然后需要在.babelrc里的presents里配置es2015
+## 安装的规则是babel-preset-xxx结构的，配置里只需要填写xxx即可。
+
+
+2.babel-cli用于命令转码  npm install -g babel-cli    ##全局安装babel。无法支持不同项目使用不同版本的babel
+常用命令：
+babel  xxx.js                                       ## 转码输出标准结果
+babel   输入js  --out-file / -o  输出js    ## babel example.js -o /--out-file compiled.js
+babel src --out-dir / -d lib                  ## 输出目录
+babel src -d lib -s                               ## -s参数生产source map文件
+
+3.项目安装babel-cli 
+  npm install babel-cli --save-dev
+
+4.babel-cli工具自带babel-node命令，提供了一个支持es6的REPL环境，可直接运行es6代码。
+  ## 命令为：babel-node
+
+5.更多命令参考官网和http://caibaojian.com/es6/
+
+
+ 
